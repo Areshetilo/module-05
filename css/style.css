@@ -1,0 +1,390 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+img {
+  border-style: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-head {
+  background-color: white;
+  padding: 38px 0px 32px 0px;
+}
+
+.main-logo {
+  float: left;
+}
+
+.main-logo .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #555252;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 400;
+}
+
+.navigation {
+  float: right;
+}
+
+.main-nav {
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 28px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f0101;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: #1abc9c;
+}
+
+.nav-item:last-child {
+  margin-right: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-img {
+  filter: brightness(52%);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.left {
+  background-image: url(../img/icon/slider-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  width: 104px;
+  height: 104px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-right: 80px;
+  transition: 0.3s;
+}
+
+.right {
+  background-image: url(../img/icon/slider-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+  width: 104px;
+  height: 104px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.slider-description {
+  float: left;
+  margin-right: 85px;
+  vertical-align: top;
+}
+
+.tours {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+}
+
+.tours-first-word {
+  transition: 0.3s;
+}
+
+.slider-active {
+  width: 1114px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tours-tickets {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.slider:hover .tours-first-word {
+  color: #ff7200;
+}
+
+.left:hover {
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+}
+
+.right:hover {
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+}
+
+.product-section {
+  background-color: #e9f0fd;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.new-collection {
+  color: #515151;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: -0.96px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.new-collection::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.product-list-item {
+  width: 255px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.product-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.product-list-item__description {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #323232;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+.product-list-item__description-link {
+  display: block;
+}
+
+.product-list-item__description-name {
+  float: left;
+  margin: 0px;
+  padding: 12px 14px;
+  font-size: 18px;
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.product-list-item__description-price {
+  float: right;
+  margin: 0;
+  padding: 12px 12px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.product-list-item:hover .product-list-item__description {
+  background-color: #1abc9c;
+}
+
+.wrap {
+  position: relative;
+}
+
+.overlay {
+  width: 255px;
+  height: 283px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background-color: inherit;
+  margin-bottom: 4px;
+  transition: 0.3s;
+}
+
+button {
+  cursor: pointer;
+}
+
+.overlay-buttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 168px;
+}
+
+.overlay-button:hover {
+  background-color: #1abc9c;
+}
+
+.overlay-button__buy:hover {
+  background-color: #1abc9c;
+}
+
+.overlay-button:not(:last-child) {
+  margin-right: 3px;
+}
+
+.like {
+  background-image: url(../img/icon/like.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-button__buy {
+  width: 164px;
+  height: 50px;
+  border: 1px solid #fff;
+  background-color: inherit;
+  background-color: #323232;
+  background-image: url(../img/icon/cart.png);
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 14px 14px 12px 40px;
+  transition: 0.3s;
+}
+
+.shuffle {
+  background-image: url(../img/icon/shuffle1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  background-image: url(../img/icon/clock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.basement {
+  background-color: #323232;
+}
+
+.all-rights {
+  text-align: center;
+  padding: 38px 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fefefe;
+  letter-spacing: -0.32px;
+}
+
+.all-rights .footer-link {
+  color: #46bfa9;
+}
+
+.footer-link {
+  display: inline-block;
+}
+
+.footer-link:hover {
+  text-shadow: #46bfa9;
+}
