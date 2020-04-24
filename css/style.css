@@ -383,7 +383,3 @@ button {
 .footer-link {
   display: inline-block;
 }
-
-.footer-link:hover {
-  text-shadow: #46bfa9;
-}
