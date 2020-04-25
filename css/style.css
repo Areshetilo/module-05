@@ -126,8 +126,10 @@ li {
   width: 104px;
   height: 104px;
   /* background-color: transparent; */
-  margin-right: 80px;
   transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .right {
@@ -139,12 +141,16 @@ li {
   height: 104px;
   /* background-color: transparent; */
   transition: 0.3s;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .slider-description {
-  float: left;
-  margin-right: 85px;
   vertical-align: top;
+  text-align: left;
+  width: 750px;
+  margin: 0 auto;
 }
 
 .tours {
